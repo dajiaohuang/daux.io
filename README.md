@@ -77,9 +77,9 @@ Download this repository as a zip, unpack, and put your documentation in the `do
 
 ## `daux`
 
-The command line tool has two commands: `generate` and `serve`, running Daux.io without an argument will automatically run the `generate` command.
+Use `daux generate` to generate documentation and `daux serve` to preview it locally. Running `daux` without a command lists the available commands.
 
-You can run `daux --help` to get more details about each command.
+Run `daux generate --help` or `daux serve --help` for details about each command.
 
 ## Folders
 
@@ -186,7 +186,7 @@ These can be uploaded to a static site hosting service such as pages.github.com
 Generating a complete set of pages, with navigation
 
 ```bash
-daux --source=docs --destination=static
+daux generate --source=docs --destination=static
 ```
 
 ## Running on IIS

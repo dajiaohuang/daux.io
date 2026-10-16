@@ -117,7 +117,7 @@ We recommend the first one while you write your documentation, you get a much qu
 You can use PHP's embedded web server by running the following command in the root of your documentation
 
 ```
-./serve
+daux serve
 ```
 
 Upload your files to an apache / nginx server and see your documentation
@@ -134,7 +134,7 @@ Daux.io is extendable and comes by default with three export formats:
 
 [See a detailed feature comparison matrix](01_Features/Multiple_Output_Formats.md)
 
-To export, run the `daux` command and your documentation will be generated in `static` (you can change the destination with the `--destination` option)
+To export, run the `daux generate` command and your documentation will be generated in `static` (you can change the destination with the `--destination` option)
 
 [See here for all options](01_Features/Static_Site_Generation.md)
 
