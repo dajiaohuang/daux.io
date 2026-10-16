@@ -28,4 +28,10 @@ class DauxHelperTest extends TestCase
             [['Code_Highlighting.html', 'Code_Highlighting'], '05_Code_Highlighting.md'],
         ];
     }
+
+    public function testGetAbsoluteWindowsPath()
+    {
+        $this->assertSame('C:/docs', DauxHelper::getAbsolutePath('C:/docs'));
+        $this->assertSame('C:\\docs', DauxHelper::getAbsolutePath('C:\\docs'));
+    }
 }

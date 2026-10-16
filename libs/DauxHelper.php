@@ -248,7 +248,7 @@ class DauxHelper
         $regExp = '%^(?<wrappers>(?:[[:print:]]{2,}://)*)';
 
         // Optional root prefix.
-        $regExp .= '(?<root>(?:[[:alpha:]]:/|/)?)';
+        $regExp .= '(?<root>(?:[[:alpha:]]:[/\\\\]|/)?)';
 
         // Actual path.
         $regExp .= '(?<path>(?:[[:print:]]*))$%';
